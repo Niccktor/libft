@@ -6,7 +6,7 @@
 #    By: tbeguin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 20:10:01 by tbeguin           #+#    #+#              #
-#    Updated: 2018/12/06 01:45:44 by tbeguin          ###   ########.fr        #
+#    Updated: 2019/01/04 17:45:57 by tbeguin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,8 @@ SRCS =  ft_memset.c 	\
 	   ft_lstiter.c		\
 	   ft_lstmap.c		\
 	   ft_islower.c		\
-	   ft_isupper.c
+	   ft_isupper.c		\
+	   get_next_line.c	
 
 OBJS = $(SRCS:.c=.o)
 
@@ -83,6 +84,7 @@ all : $(NAME)
 
 $(OBJS) : %.o:%.c
 	@$(CC) -c $(CFLAGS) $< -o $@
+	@echo "\033[36m$(CC) $(FLAGS) -c $< -o $@\033[0m"
 
 $(NAME) : $(OBJS)
 	@ar rc $(NAME) $(OBJS)
