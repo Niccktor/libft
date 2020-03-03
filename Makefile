@@ -6,7 +6,7 @@
 #    By: tbeguin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 20:10:01 by tbeguin           #+#    #+#              #
-#    Updated: 2020/02/04 02:23:56 by tbeguin          ###   ########.fr        #
+#    Updated: 2020/03/03 15:22:36 by tbeguin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -126,6 +126,7 @@ fclean : clean
 	@rm -f $(NAME)
 	@echo "\033[31mRemoved Libft\033[0m"
 
-re : fclean all
+re : fclean 
+	@make all
 
 .PHONY : all clean fclean re

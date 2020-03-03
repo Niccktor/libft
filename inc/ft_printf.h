@@ -6,14 +6,13 @@
 /*   By: tbeguin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/13 12:25:33 by tbeguin           #+#    #+#             */
-/*   Updated: 2020/02/04 02:27:00 by tbeguin          ###   ########.fr       */
+/*   Updated: 2020/03/03 15:21:39 by tbeguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 #include "libft.h"
-#include <stdarg.h>
 
 typedef struct		s_pf_env
 {
@@ -33,7 +32,6 @@ typedef struct		s_pf_handel
 	void		(*fnc)();
 }					t_pf_handel;
 
-int					ft_printf(const char *format, ...);
 void				pf_print_dx(char *str, int sign, t_pf_env *env);
 void				pf_catch(t_pf_env *env, va_list *ap);
 int					pf_check(t_pf_env *env);

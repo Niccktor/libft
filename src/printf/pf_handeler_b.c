@@ -6,7 +6,7 @@
 /*   By: tbeguin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 11:06:56 by tbeguin           #+#    #+#             */
-/*   Updated: 2020/01/24 03:59:07 by tbeguin          ###   ########.fr       */
+/*   Updated: 2020/03/03 15:19:12 by tbeguin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ void					pf_handeler_b(t_pf_env *env, va_list *ap)
 			&& env->flag[3] != 1)
 		env->i++;
 	else
-		pf_print_dx(pf_itoa_base(nbr, 1), sign, env);
+		pf_print_dx(pf_itoa_base(nbr, 2), sign, env);
 }
