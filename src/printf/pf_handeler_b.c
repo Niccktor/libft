@@ -28,7 +28,7 @@ void					pf_handeler_b(t_pf_env *env, va_list *ap)
 		nbr = (unsigned long long int)(unsigned char)va_arg(*ap, unsigned int);
 	else
 		nbr = (unsigned long long int)va_arg(*ap, unsigned int);
-	if (nbr >= 0 && env->flag[5] == 1)
+	if (env->flag[5] == 1)
 		pf_char_buff(env, '0');
 	if (nbr == 0
 			&& (env->flag[9] <= -10 || env->flag[5] == 1)
